@@ -1,63 +1,64 @@
-# Webpack Starter Template
+# Portfolio Homepage
 
-A modern, beginner-friendly webpack starter template for JavaScript projects.
+The Odin Project - Advanced HTML & CSS Course Final Project
 
-## ✨ Features
+## Project Overview
 
-- Webpack 5 with separate dev and prod configs
-- Live reloading with webpack-dev-server
-- ESLint and Prettier integration for code quality and formatting
-- CSS and asset (image, favicon) support
-- Organized folder structure (`src/js`, `src/styles`, `src/assets`)
-- Ready for The Odin Project and similar curricula
+Create a responsive portfolio homepage matching provided design specifications.
 
-## 🚀 Getting Started
+### Design Files
+
+- [Desktop design]()
+- [Tablet design]()
+- [Mobile design]()
+
+### Requirements
+
+- Responsive design (320px to 1920px)
+- Semantic HTML
+- Accessible implementation
+- Match provided design layouts
+
+### Technologies
+
+- HTML5
+- CSS3 (with Tailwind CSS v4.1.18 for development)
+- Vanilla JavaScript (minimal)
+- Webpack 5 (build tool)
+
+## Development
 
 ```bash
-# Clone the repo
-git clone [your-repo-url]
-cd webpack-starter-template
-
 # Install dependencies
 npm install
 
-# Start development server
+# Start development server with hot reload
 npm start
 
 # Build for production
 npm run build
+
+# Deploy to GitHub Pages
+npm run deploy
 ```
 
-## 🛠️ Code Quality
+## Project Structure
 
-- **Lint code:**  
-  `npm run lint`
-- **Auto-fix lint errors:**  
-  `npm run lint:fix`
-- **Format code with Prettier:**  
-  `npm run format`
-- **Check formatting:**  
-  `npm run format:check`
-
-## 📁 Folder Structure
-
-```
+```bash
 src/
-  js/
-    index.js
-    modules/
-  styles/
-    main.css
-  assets/
-    favicon.ico
-  template.html
-docs/
-  ARCHITECTURE.md
-  DESIGN.md
-  MVP.md
-  ROADMAP.md
+├── template.html     # Main HTML template
+├── styles/
+│   └── input.css    # Tailwind CSS and custom styles
+├── js/
+│   ├── index.js     # Main JavaScript
+│   └── modules/     # Utility modules
+└── assets/          # Images, icons, fonts
 ```
 
-## 📝 License
+## Credits
 
-ISC
+- Original Project Design by The Odin Project
+
+- Icons from Material Design Icons and Devicon
+
+- Fonts: Google Fonts
