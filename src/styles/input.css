@@ -1,6 +1,9 @@
 /* Tailwind CSS v4.1.18 */
 @import 'tailwindcss';
 
+/* JetBrains Mono and Inter fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* Custom base styles */
 @layer base {
   :root {
@@ -13,6 +16,28 @@
       'calt' 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+
+  code,
+  pre,
+  .mono,
+  .font-mono {
+    font-family: 'JetBrains Mono', 'Consolas', monospace;
   }
 }
 
