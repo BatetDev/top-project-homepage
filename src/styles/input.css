@@ -71,6 +71,44 @@
   .social-link i {
     @apply w-6 h-6;
   }
+
+  /* Footer Components */
+  .footer-section {
+    @apply bg-gray-900 text-white;
+  }
+
+  .contact-heading {
+    @apply text-3xl font-bold mb-6;
+    position: relative;
+    padding-bottom: 0.75rem;
+  }
+
+  .contact-heading::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded-full;
+  }
+
+  .footer-social-link {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-lg;
+    @apply text-gray-300 bg-gray-800;
+    @apply hover:bg-gray-700 hover:text-white;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900;
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .footer-social-link i {
+    @apply w-6 h-6;
+  }
+
+  /* Footer portrait image */
+  .footer-portrait {
+    @apply overflow-hidden;
+  }
+
+  .footer-portrait img {
+    @apply w-full h-64 object-cover;
+    filter: grayscale(20%) contrast(110%);
+  }
 }
 
 /* Custom utilities */

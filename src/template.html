@@ -87,16 +87,253 @@
 
     <main class="main-content">
       <!-- Projects Section -->
-      <section class="projects-section bg-blue-500/20 p-8">
+      <section
+        id="projects-section"
+        class="projects-section bg-gray-50 py-12 px-4"
+      >
         <div class="container mx-auto">
-          <h2 class="text-2xl font-bold">Projects</h2>
+          <!-- Section Heading -->
+          <h2 class="section-heading text-3xl font-bold text-gray-900 mb-8">
+            My Work
+          </h2>
+
+          <!-- Projects Grid (Single column on mobile) -->
+          <div class="projects-grid grid grid-cols-1 gap-8">
+            <!-- Project Card 1 -->
+            <article
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <!-- Project Screenshot -->
+              <div class="project-image aspect-video bg-gray-200">
+                <img
+                  src="https://placehold.co/600x400/3b82f6/ffffff?text=Project+Screenshot"
+                  alt="Screenshot of Calculator project showing a modern calculator interface"
+                  class="w-full h-full object-cover"
+                  width="600"
+                  height="400"
+                />
+              </div>
+
+              <!-- Project Info -->
+              <div class="project-info p-6">
+                <!-- Title and Icons Row -->
+                <div class="title-row flex justify-between items-start mb-4">
+                  <h3 class="project-title text-xl font-bold text-gray-900">
+                    Calculator
+                  </h3>
+                  <div class="project-icons flex space-x-3">
+                    <!-- GitHub Link -->
+                    <a
+                      href="https://github.com/username/calculator"
+                      class="project-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Calculator source code on GitHub"
+                    >
+                      <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <!-- External Link -->
+                    <a
+                      href="https://calculator-demo.example.com"
+                      class="project-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View live Calculator demo"
+                    >
+                      <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Project Description -->
+                <p class="project-description text-gray-700 leading-relaxed">
+                  A modern calculator web app with keyboard support, dark mode,
+                  and calculation history. Built with vanilla JavaScript.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project Card 2 -->
+            <article
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="project-image aspect-video bg-gray-200">
+                <img
+                  src="https://placehold.co/600x400/10b981/ffffff?text=Project+Screenshot"
+                  alt="Screenshot of Todo App showing task management interface"
+                  class="w-full h-full object-cover"
+                  width="600"
+                  height="400"
+                />
+              </div>
+
+              <div class="project-info p-6">
+                <div class="title-row flex justify-between items-start mb-4">
+                  <h3 class="project-title text-xl font-bold text-gray-900">
+                    Todo App
+                  </h3>
+                  <div class="project-icons flex space-x-3">
+                    <a
+                      href="https://github.com/username/todo-app"
+                      class="project-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Todo App source code on GitHub"
+                    >
+                      <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a
+                      href="https://todo-demo.example.com"
+                      class="project-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View live Todo App demo"
+                    >
+                      <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="project-description text-gray-700 leading-relaxed">
+                  A feature-rich todo application with drag-and-drop, filtering,
+                  and local storage. Built with React and Tailwind CSS.
+                </p>
+              </div>
+            </article>
+
+            <!-- Project Card 3 -->
+            <article
+              class="project-card bg-white rounded-xl shadow-lg overflow-hidden"
+            >
+              <div class="project-image aspect-video bg-gray-200">
+                <img
+                  src="https://placehold.co/600x400/8b5cf6/ffffff?text=Project+Screenshot"
+                  alt="Screenshot of Weather App showing weather forecast interface"
+                  class="w-full h-full object-cover"
+                  width="600"
+                  height="400"
+                />
+              </div>
+
+              <div class="project-info p-6">
+                <div class="title-row flex justify-between items-start mb-4">
+                  <h3 class="project-title text-xl font-bold text-gray-900">
+                    Weather App
+                  </h3>
+                  <div class="project-icons flex space-x-3">
+                    <a
+                      href="https://github.com/username/weather-app"
+                      class="project-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View Weather App source code on GitHub"
+                    >
+                      <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a
+                      href="https://weather-demo.example.com"
+                      class="project-icon"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="View live Weather App demo"
+                    >
+                      <i data-lucide="external-link" class="w-5 h-5"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <p class="project-description text-gray-700 leading-relaxed">
+                  Real-time weather application with geolocation, 7-day
+                  forecast, and multiple unit support. Built with Vue.js and
+                  OpenWeather API.
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- End Projects Grid -->
         </div>
       </section>
     </main>
 
-    <footer class="footer-section bg-green-500/20 p-8">
+    <!-- Footer Section -->
+    <footer class="footer-section bg-gray-900 text-white py-12 px-4">
       <div class="container mx-auto">
-        <h2 class="text-2xl font-bold">Footer</h2>
+        <!-- Contact Heading -->
+        <h2 class="contact-heading text-3xl font-bold mb-6">Contact me</h2>
+
+        <!-- Contact Description -->
+        <p class="contact-description text-gray-300 mb-8 max-w-lg">
+          Please get in touch if you think our work could be mutually
+          beneficial!
+        </p>
+
+        <!-- Contact Info Container -->
+        <div class="contact-info mb-8">
+          <!-- Address -->
+          <div class="address mb-6">
+            <p class="text-gray-300">1234 Random Road</p>
+            <p class="text-gray-300">Random Town, California 12345</p>
+          </div>
+
+          <!-- Phone & Email -->
+          <div class="contact-details mb-8">
+            <!-- Phone -->
+            <div class="phone flex items-center mb-4">
+              <i data-lucide="phone" class="w-5 h-5 text-blue-400 mr-3"></i>
+              <a
+                href="tel:555-555-5555"
+                class="text-gray-300 hover:text-white transition-colors"
+              >
+                555-555-5555
+              </a>
+            </div>
+
+            <!-- Email -->
+            <div class="email flex items-center">
+              <i data-lucide="mail" class="w-5 h-5 text-blue-400 mr-3"></i>
+              <a
+                href="mailto:ashleywilliams.is.not.real@gmail.com"
+                class="text-gray-300 hover:text-white transition-colors"
+              >
+                ashleywilliams.is.not.real@gmail.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-social mb-8">
+          <p class="text-gray-400 mb-4">Find me online:</p>
+          <div class="flex space-x-6">
+            <a
+              href="https://github.com"
+              class="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+            >
+              <i data-lucide="github" class="w-8 h-8"></i>
+            </a>
+            <a
+              href="https://linkedin.com"
+              class="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+            >
+              <i data-lucide="linkedin" class="w-8 h-8"></i>
+            </a>
+            <a
+              href="https://twitter.com"
+              class="footer-social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter profile"
+            >
+              <i data-lucide="twitter" class="w-8 h-8"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
