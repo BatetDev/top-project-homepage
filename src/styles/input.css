@@ -54,16 +54,38 @@
   .card {
     @apply bg-white rounded-xl shadow-md border border-gray-200;
   }
+
+  /* Header Components */
+  .header-section {
+    @apply bg-white;
+  }
+
+  .social-link {
+    @apply inline-flex items-center justify-center w-12 h-12 rounded-lg;
+    @apply text-gray-700 bg-gray-100;
+    @apply hover:bg-gray-200 hover:text-gray-900;
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
+    @apply transition-all duration-200 ease-in-out;
+  }
+
+  .social-link i {
+    @apply w-6 h-6;
+  }
 }
 
 /* Custom utilities */
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r;
+    @apply bg-clip-text text-transparent bg-linear-to-r;
   }
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  /* Accessibility utilities */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
   }
 }
 
@@ -82,5 +104,21 @@
 @media print {
   .no-print {
     display: none !important;
+  }
+
+  .social {
+    display: none;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .social-link,
+  .btn {
+    transition: none;
+  }
+
+  .animate-float {
+    animation: none;
   }
 }
