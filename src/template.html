@@ -16,13 +16,29 @@
   >
     <header id="header" class="header-section bg-white py-10 px-4">
       <div class="container mx-auto">
-        <!-- Portrait -->
+        <!-- Responsive Portrait -->
         <div class="portrait mb-8">
-          <img
-            src="./assets/images/portraits/portraitA.jpg"
-            alt="Portrait of John Doe, Full Stack Developer"
-            class="w-64 h-64 rounded-full object-cover mx-auto shadow-lg"
-          />
+          <picture>
+            <img
+              src="./assets/images/portraits/portraitA800x600.jpg"
+              srcset="
+                ./assets/images/portraits/portraitA400x300.jpg    400w,
+                ./assets/images/portraits/portraitA800x600.jpg    800w,
+                ./assets/images/portraits/portraitA1200x900.jpg  1200w,
+                ./assets/images/portraits/portraitA2000x1500.jpg 2000w
+              "
+              sizes="(max-width: 640px) 200px,
+                   (max-width: 1024px) 400px,
+                   600px"
+              alt="Portrait of John Doe, Full Stack Developer"
+              class="w-64 h-64 rounded-full object-cover mx-auto shadow-lg"
+              width="256"
+              height="256"
+              loading="eager"
+              fetchpriority="high"
+            />
+            />
+          </picture>
         </div>
 
         <!-- Name & Title -->
