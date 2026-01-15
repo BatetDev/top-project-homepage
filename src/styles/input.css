@@ -60,21 +60,71 @@
     @apply bg-white;
   }
 
-  .social-link {
-    @apply inline-flex items-center justify-center w-12 h-12 rounded-lg;
-    @apply text-gray-700 bg-gray-100;
-    @apply hover:bg-gray-200 hover:text-gray-900;
-    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
-    @apply transition-all duration-200 ease-in-out;
+  .social-icon {
+    @apply inline-flex items-center justify-center;
+    @apply w-14 h-14 rounded-full;
+    @apply bg-gray-800 text-emerald-300;
+    @apply hover:bg-emerald-900 hover:text-emerald-100;
+    @apply focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-950;
+    @apply transition-all duration-300;
   }
 
-  .social-link i {
-    @apply w-6 h-6;
+  .social-icon:hover {
+    transform: scale(1.05);
+  }
+
+  .social-icon i {
+    @apply w-7 h-7;
+  }
+
+  /* Project Cards - Dark Theme */
+  .project-card {
+    @apply bg-gray-800 rounded-xl overflow-hidden;
+    @apply border border-gray-700;
+    @apply transition-all duration-300;
+    @apply hover:border-emerald-500/50 hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .project-image {
+    @apply aspect-video bg-gray-900 overflow-hidden;
+  }
+
+  .project-image img {
+    @apply w-full h-full object-cover;
+    @apply transition-transform duration-500;
+  }
+
+  .project-card:hover .project-image img {
+    @apply scale-105;
+  }
+
+  .project-info {
+    @apply p-6;
+  }
+
+  .project-title {
+    @apply text-xl font-bold text-emerald-300;
+  }
+
+  .project-description {
+    @apply leading-relaxed;
+  }
+
+  .project-icon {
+    @apply inline-flex items-center justify-center w-10 h-10 rounded-lg;
+    @apply bg-gray-700 text-emerald-400;
+    @apply hover:bg-emerald-900 hover:text-emerald-300;
+    @apply focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-gray-800;
+    @apply transition-all duration-200;
+  }
+
+  .project-icon i {
+    @apply w-4 h-4;
   }
 
   /* Footer Components */
   .footer-section {
-    @apply bg-gray-900 text-white;
+    @apply bg-gray-900;
   }
 
   .contact-heading {
@@ -83,14 +133,9 @@
     padding-bottom: 0.75rem;
   }
 
-  .contact-heading::after {
-    content: '';
-    @apply absolute bottom-0 left-0 w-16 h-1 bg-blue-400 rounded-full;
-  }
-
   .footer-social-link {
     @apply inline-flex items-center justify-center w-12 h-12 rounded-lg;
-    @apply text-gray-300 bg-gray-800;
+    @apply text-emerald-300 bg-gray-800;
     @apply hover:bg-gray-700 hover:text-white;
     @apply focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-gray-900;
     @apply transition-all duration-200 ease-in-out;
@@ -158,5 +203,28 @@
 
   .animate-float {
     animation: none;
+  }
+}
+
+/* Tablet styles (768px and up) */
+@media (min-width: 768px) {
+  .header-section .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+/* Desktop styles (1024px and up) */
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }
